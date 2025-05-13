@@ -1,0 +1,111 @@
+.account-container {
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 側邊欄 */
+.account-sidebar {
+    width: 20%;
+    background: white;
+    padding: 20px;
+    border-right: 2px solid grey;
+    flex-shrink: 0;  
+    height: 100vh;
+}
+
+.account-sidebar {
+    color: #4682A9;
+    margin-bottom: 15px;
+}
+
+.account-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.account-nav a {
+    text-decoration: none;
+    color: #4682A9;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+}
+
+.account-nav a.active,
+.account-nav a:hover {
+    background: #91C8E4;
+    color: white;
+}
+
+/* 主要內容區 */
+.account-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+/* 簡介統計 */
+.profile-overview {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-stat {
+    text-align: center;
+}
+
+.profile-stat img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-stat h1 {
+    font-size: 24px;
+    color: #4682A9;
+}
+
+.profile-stat p {
+    color: #666;
+}
+
+/* 使用者資訊表格 */
+.user-info {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-info td {
+    padding: 10px;
+    border-bottom: 1px solid #91C8E4;
+}
+
+/* 貢獻紀錄 */
+.contribution-card {
+    display: flex;
+    align-items: center;
+    background: #F6F4EB;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contribution-card img {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.contribution-card strong {
+    font-size: 18px;
+}
+
+.contribution-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}

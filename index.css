@@ -1,0 +1,161 @@
+/* index.css - Login Page Styling */
+
+/* 整體背景 */
+.main-container {
+    display: flex;
+    justify-content: center; /* 讓左右內容區域在父容器中水平置中 */
+    align-items: center; /* 讓內容區塊在垂直方向置中 */
+    height: 100vh; /* 讓整個頁面高度充滿，方便置中 */
+}
+
+.content {
+    flex: 1; /* 讓內容區塊填滿剩餘空間 */
+    padding: 20px;
+    background-color: #F6F4EB;
+    max-width: 50%; /* 限制最大寬度，避免過寬 */
+    display: flex; /* 讓內部的 .introduction 置中 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    word-wrap: break-word;
+}
+
+.introduction-container {
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* 登入表單容器 */
+.login-container {
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F4EB; /* 主背景色 */
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 讓登入表單置中 */
+}
+
+
+
+/* 標題 */
+h2 {
+    color: #4682A9; /* 標題顏色 */
+    margin-bottom: 20px;
+}
+
+/* 表單內的標籤 */
+label {
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    color: #4682A9;
+}
+
+/* 輸入框 */
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 50px;
+    border: 1px solid #4682A9;
+    border-radius: 100px;
+    font-size: 16px;
+
+}
+
+input:focus {
+    border-color: #4682A9; 
+    outline: none; /* ✅ 移除藍色外框 (某些瀏覽器有額外的預設 outline) */
+    box-shadow: 0 0 5px rgba(70, 130, 169, 0.5); /* ✅ 增加淡淡的陰影效果 */
+}
+
+/* 按鈕 */
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background-color: #4682A9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.1s;
+}
+
+button:hover {
+    background-color: #749BC2;
+}
+
+/* 註冊、忘記密碼連結 */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+p a {
+    color: #4682A9;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* 錯誤或成功訊息 */
+.message {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 5px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* ✅ 改成垂直排列 */
+        align-items: center; /* ✅ 讓內容置中 */
+    }
+
+    .content {
+        width: 100%; /* ✅ 讓 content 佔滿 */
+        max-width: 90%; /* ✅ 避免太窄 */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduction, .login-container {
+        width: 90%; /* ✅ 讓內容不會過窄 */
+        max-width: 400px;
+        margin: 10px auto; /* ✅ 讓區塊有間距 */
+    }
+
+    .login-container input {
+        width: 90%; /* ✅ 讓輸入框填滿 */
+    }
+}
+
+
